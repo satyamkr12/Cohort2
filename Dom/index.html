@@ -1,0 +1,18 @@
+<html>
+  <script>
+    function populateSum() {
+      const a = document.getElementById("first").value;
+      const b = document.getElementById("second").value;
+      const element = document.getElementById("finalSum");
+      element.innerHTML = "Sum is : " + (parseInt(a) + parseInt(b));
+    }
+  </script>
+  <body>
+    <input id="first" type="text" placeholder="First Number" /> <br /><br />
+    <input id="second" type="text" placeholder="Second Number" /> <br /><br />
+
+    <button onClick="populateSum()">Calculate Sum</button><br /><br />
+
+    <div id="finalSum"></div>
+  </body>
+</html>
